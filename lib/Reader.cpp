@@ -25,9 +25,6 @@ void Reader::reading() {
 	size_t count = 0;
 
 	for (string line; getline(cin, line);) {
-		if (line == "===")
-			break;
-
 		if (line.empty() && !data_.empty()) {
 			notify();
 			data_.clear();
